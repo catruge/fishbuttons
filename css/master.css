@@ -39,8 +39,8 @@ button:hover {
 }
 
 button:active {
-  background-color: darkslategrey;
-  border-color: slategrey;
+  background-color: darkslategray;
+  border-color: slategray;
   flex: 1;
 }
 
