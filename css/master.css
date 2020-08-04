@@ -33,12 +33,17 @@ button {
   display: flex;
 }
 
-button:hover {
+button:disabled {
+  background-color: whitesmoke;
+  border-color: lightgray;
+}
+
+button:hover:enabled {
   background-color: white;
   flex: 2;
 }
 
-button:active {
+button:active:enabled {
   background-color: darkslategray;
   border-color: slategray;
   flex: 1;
@@ -54,12 +59,12 @@ button:active {
   border-color: yellowgreen;
 }
 
-.top-button:hover {
+.top-button:hover:enabled {
   color: yellowgreen;
   width: 20vw;
 }
 
-.top-button:active {
+.top-button:active:enabled {
   color: white;
   width: 16vw;
 }
@@ -71,11 +76,11 @@ button:active {
   padding-left: 64px;
 }
 
-.left-button:hover {
+.left-button:hover:enabled {
   color: lightseagreen;
 }
 
-.left-button:active {
+.left-button:active:enabled {
   color: white;
 }
 
@@ -86,11 +91,11 @@ button:active {
   padding-right: 64px;
 }
 
-.right-button:hover {
+.right-button:hover:enabled {
   color: tomato;
 }
 
-.right-button:active {
+.right-button:active:enabled {
   color: white;
 }
 
@@ -101,13 +106,13 @@ button:active {
   padding-right: 64px;
 }
 
-.bottom-button:hover {
+.bottom-button:hover:enabled {
   color: purple;
   margin-left: 2vw;
   margin-right: 1vw;
 }
 
-.bottom-button:active {
+.bottom-button:active:enabled {
   color: white;
   margin: 4px;
 }
