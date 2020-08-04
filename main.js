@@ -6,8 +6,8 @@ const buttons = {
 };
 
 document.onkeypress = (keypress) => {
-  try {
+  if (keypress.key in buttons) {
     const opacity = buttons[keypress.key].style.opacity;
     buttons[keypress.key].style.opacity = opacity === '1' || opacity === '' ? '0.1' : '1';
-  } catch {}
+  }
 }
