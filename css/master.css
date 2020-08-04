@@ -45,17 +45,17 @@ button:active {
 }
 
 .top-button {
-  background-color: lightgreen;
+  background-color: yellowgreen;
   padding: 8px;
   min-width: 128px;
   width: 16vw;
   margin-left: 128px;
   border-radius: 64px 16px;
-  border-color: lightgreen;
+  border-color: yellowgreen;
 }
 
 .top-button:hover {
-  color: lightgreen;
+  color: yellowgreen;
   width: 20vw;
 }
 
