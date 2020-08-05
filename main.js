@@ -8,5 +8,7 @@ const buttons = {
 document.onkeypress = (keypress) => {
   if (keypress.key in buttons) {
     buttons[keypress.key].disabled = !buttons[keypress.key].disabled;
+  } else if (keypress.key === 'd') {
+    document.documentElement.classList.toggle('dark');
   }
 }

@@ -3,6 +3,21 @@ html, body {
   overflow: hidden;
 }
 
+html {
+  --primary-color: whitesmoke;
+  --secondary-color: white;
+  --accent-color: lightgray;
+
+  background-color: var(--primary-color);
+  transition-duration: 500ms;
+}
+
+html.dark {
+  --primary-color: #222;
+  --secondary-color: black;
+  --accent-color: #333;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -11,7 +26,7 @@ body {
 
 button {
   border: none;
-  color: white;
+  color: var(--secondary-color);
   font-size: 36px;
   padding: 32px;
   border: 8px solid;
@@ -34,12 +49,12 @@ button {
 }
 
 button:disabled {
-  background-color: whitesmoke;
-  border-color: lightgray;
+  background-color: var(--primary-color);
+  border-color: var(--accent-color);
 }
 
 button:hover:enabled {
-  background-color: white;
+  background-color: var(--secondary-color);
   flex: 2;
 }
 
@@ -65,7 +80,7 @@ button:active:enabled {
 }
 
 .top-button:active:enabled {
-  color: white;
+  color: var(--secondary-color);
   width: 16vw;
 }
 
@@ -81,7 +96,7 @@ button:active:enabled {
 }
 
 .left-button:active:enabled {
-  color: white;
+  color: var(--secondary-color);
 }
 
 .right-button {
@@ -96,7 +111,7 @@ button:active:enabled {
 }
 
 .right-button:active:enabled {
-  color: white;
+  color: var(--secondary-color);
 }
 
 .bottom-button {
@@ -113,6 +128,6 @@ button:active:enabled {
 }
 
 .bottom-button:active:enabled {
-  color: white;
+  color: var(--secondary-color);
   margin: 4px;
 }
