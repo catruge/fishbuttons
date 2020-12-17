@@ -1,3 +1,3 @@
 # fishbuttons
 
-A simple interactive, but impractical web page.
+A simple interactive, but impractical webpage.
